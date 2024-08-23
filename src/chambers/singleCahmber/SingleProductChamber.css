@@ -1,0 +1,120 @@
+.product-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  .product-details {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .product-title {
+    font-size: 2em;
+    color: #1ba39c;
+    margin-bottom: 5px;
+  }
+  
+  .product-subtitle {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .product-specs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .spec {
+    text-align: center;
+  }
+  
+  .spec-value {
+    font-size: 1.5em;
+    color: #1ba39c;
+    font-weight: bold;
+  }
+  
+  .spec-label {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .product-description {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .quote-button {
+    padding: 10px 20px;
+    background-color: #1ba39c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
+}
+  
+  .quote-button {
+    width: 100%;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #1ba39c 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: left right;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-position 0.5s;
+        border: 1px solid #1ba39c;
+
+  }
+  
+  .quote-button:hover {
+    background-position: right bottom;
+    color: #1ba39c;
+    border: 1px solid #1ba39c;  }
+  
+  .quote-button:hover {
+    /* background-color: #169488; */
+  }
+  
+  .product-image-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .product-image {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-image-container:hover .product-image {
+    transform: scale(1.1);
+  }
+  
+  .product-container:hover .product-image-container::before {
+    top: var(--mouse-y);
+    left: var(--mouse-x);
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 255, 0.2);
+    border-radius: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: top 0.2s ease, left 0.2s ease;
+  }
+  
