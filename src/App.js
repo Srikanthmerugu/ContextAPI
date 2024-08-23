@@ -14,8 +14,7 @@ const App = () => {
 <MouseHoverEffect />
 <ChamberMainsesstion />
 <SingleProductChamber />
-       
-{/* 1234567 */}
+
       </ContextAPI>
     </div>
   )
